@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/water.css" />
+    <link rel="stylesheet" href="./css/styleRequest.css" />
+
+    <title>Request New Artist Form</title>
+  </head>
+  <body>
+    <h1>Request New Artist</h1>
+    <hr />
+    <form action="https://httpbin.org/post" class="request-form" method="post">
+      <div id="artist-name-container">
+        <label for="artist-name">Name of the artist:</label>
+        <input name="artist-name" type="text" class="input-request" />
+      </div>
+
+      <div id="music-genre-containger">
+        <label for="music-genre">Music Genre:</label>
+        <input
+          list="genres"
+          id="music-genre"
+          name="music-genre"
+          required
+          class="input-request"
+          placeholder="Choose from recommendation or type your genre here."
+        />
+        <datalist id="genres">
+          <option value="Pop"></option>
+          <option value="Rock"></option>
+          <option value="Hip Hop"></option>
+          <option value="Country"></option>
+          <option value="Jazz"></option>
+          <option value="Classical"></option>
+          <option value="Electronic"></option>
+          <option value="R&B"></option>
+          <option value="Reggae"></option>
+          <option value="Folk"></option>
+        </datalist>
+      </div>
+
+      <hr />
+
+      <div id="social-media-container">
+        <button type="button" id="add-social-media-button" class="button">
+          Add Social Media
+        </button>
+        <!--Social media link goes here-->
+      </div>
+
+      <hr />
+
+      <div id="input-song-container">
+        <button type="button" id="add-song-button" class="button">
+          Add Song
+        </button>
+        <!--Song goes here-->
+        <!--explicit lyrics check box goes with the song-->
+      </div>
+
+      <hr />
+
+      <div id="description-container">
+        <label for="description">Description:</label>
+        <textarea
+          name="description"
+          id="description-box"
+          class="input-request"
+          placeholder="Why do you think we should added this artist:"
+        ></textarea>
+      </div>
+      <input type="submit" name="submit" id="submit-button" />
+    </form>
+    <script src="js/request.js" defer></script>
+  </body>
+</html>
