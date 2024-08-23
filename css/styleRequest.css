@@ -1,0 +1,29 @@
+.request-form {
+  border: 2px solid rgb(red, green, blue);
+  border-radius: 15px;
+  display: block;
+  padding: 10px;
+}
+
+.input-request {
+  width: 100%; /* Ensures the input fields take up the full width of the container */
+  box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+  padding: 8px;
+  margin-bottom: 12px;
+}
+
+.input-song-container {
+  display: flex;
+}
+
+.button:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 5px 5px 20px #676767;
+}
+
+#submit-button:hover {
+  background-color: green;
+  color: rgb(255, 255, 255);
+  box-shadow: 5px 5px 20px #bdffc5;
+}
